@@ -3,7 +3,7 @@ array = [int(i) for i in array]
 
 # 162085
 # 164123
-# 159894
+# 138382
 
 assert len(array) == 10000
 
