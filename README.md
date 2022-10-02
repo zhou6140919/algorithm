@@ -6,5 +6,6 @@
    - Week3: Quick Sort with Different Pivots & Quick Sort Analysis
    - Week4: Randomized Selection & Graph Minimum Cuts
 2. Graph Search, Shortest Paths, and Data Structures
+   - Week1: Graph Search by BFS and DFS & Kosaraju’s Two-Pass Algorithm
 3. Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
 4. Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
