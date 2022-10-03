@@ -1,10 +1,4 @@
 import collections
-import sys
-import random
-
-
-def return_emptylist():
-    return []
 
 
 def return_false():
@@ -17,8 +11,8 @@ def ParseGraph(filename):
         fields = [int(f) for f in l.split()]
         edges.append(tuple(fields))
 
-    adjacency = collections.defaultdict(return_emptylist)
-    reverse_adjacency = collections.defaultdict(return_emptylist)
+    adjacency = collections.defaultdict(list)
+    reverse_adjacency = collections.defaultdict(list)
     for e in edges:
         adjacency[e[0]] = adjacency[e[0]] + [e]
         reverse_adjacency[e[1]] = reverse_adjacency[e[1]] + [(e[1], e[0])]
@@ -42,26 +36,25 @@ def ResetState():
     explored = collections.defaultdict(return_false)
 
 
-def DFSLoop(edges, labeling, reversed=False):
+def DFSLoop(labeling, reversed=False):
     global s
     for i in labeling:
         if not explored[i]:
             s = i
-            DFS(edges, i, reversed)
+            DFS(i, reversed)
 
 
 forward_adjacency = {}
 reverse_adjacency = {}
 
 
-def DFS(edges, start, reversed=False):
+def DFS(start, reversed=False):
     global t
     if reversed:
         adjacency = reverse_adjacency
     else:
         adjacency = forward_adjacency
 
-    # Iterative (i.e. manually managing a stack) solution.
     stack = []
     stack.append((start, 1))
 
@@ -89,14 +82,14 @@ forward_adjacency, reverse_adjacency, edges = ParseGraph("scc.txt")
 
 num_nodes = max([e[0] for e in edges] + [e[1] for e in edges])
 labeling = range(num_nodes, 0, -1)
-DFSLoop(edges, labeling, True)
+DFSLoop(labeling, True)
 
 
 inverse_finishing = dict((v, k) for k, v in finishing.items())
 finish_labeling = [inverse_finishing[i] for i in range(num_nodes, 0, -1)]
 
 ResetState()
-DFSLoop(edges, finish_labeling)
+DFSLoop(finish_labeling)
 
 
 sccs = {}
@@ -113,4 +106,4 @@ for i in sccs:
     if a > min(num_largest):
         num_largest.remove(min(num_largest))
         num_largest.append(a)
-print(",".join(sorted(num_largest, reverse=True)))
+print(",".join([str(i) for i in sorted(num_largest, reverse=True)]))
