@@ -8,5 +8,6 @@
 2. Graph Search, Shortest Paths, and Data Structures
    - Week1: Graph Search by BFS and DFS & Kosaraju’s Two-Pass Algorithm
    - Week2: Dijkstra's Shortest-Path Algorith
+   - Week3: Heaps, Median Maintenance & Balanced Binary Search Trees
 3. Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
 4. Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
