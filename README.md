@@ -11,4 +11,5 @@
    - Week3: Heaps, Median Maintenance & Balanced Binary Search Trees
    - Week4: Hashing & Bloom Filters
 3. Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
+   - Week1: Greedy Algorithm & Minimum Spanning Tree
 4. Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
