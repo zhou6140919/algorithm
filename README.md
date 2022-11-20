@@ -12,4 +12,5 @@
    - Week4: Hashing & Bloom Filters
 3. Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
    - Week1: Greedy Algorithm & Minimum Spanning Tree
+   - Week2: Kruskal's Algorithm & Clustering
 4. Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
