@@ -14,4 +14,5 @@
    - Week1: Greedy Algorithm & Minimum Spanning Tree
    - Week2: Kruskal's Algorithm & Clustering
    - Week3: Huffman Codes & Dynamic Programming
+   - Week4: Knapsack Problem & Sequence Alignment & Optimal Binary Search Trees
 4. Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
