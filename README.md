@@ -16,3 +16,4 @@
    - Week3: Huffman Codes & Dynamic Programming
    - Week4: Knapsack Problem & Sequence Alignment & Optimal Binary Search Trees
 4. Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
+   - Week1: Bellman-Ford Algorithm & All Pairs Shortest Paths
